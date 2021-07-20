@@ -1,0 +1,9 @@
+<h2>Component 1</h2>
+<input type="text" [(ngModel)]="message">
+<button (click)="incrementCounter()"> Increment Counter </button> <br><br>
+<!-- <span>Counter of Component 1: {{ counter }}</span> -->
+<span>Message: {{ message }}</span>
+<br>
+<app-comp11 [message]="message" [counter]="counter"></app-comp11>
+<app-comp12 [message]="message" [counter]="counter"></app-comp12>
+

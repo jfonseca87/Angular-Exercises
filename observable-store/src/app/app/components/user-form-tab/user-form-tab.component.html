@@ -1,0 +1,12 @@
+<section class="user__tab" *ngFor="let user of users$ | async; let amount = count"
+ [class.user__tab--selected]="user.isSelected">
+  <span class="user__name"
+   (click)="select(user)">{{ userLabel(user) }}</span>
+  <button class="user__remove"
+    [class.user__remove--disabled]="amount == 1"
+
+  (click)="remove(user)"
+  >X</button>
+</section>
+
+<span class="description">user-create-tab</span>

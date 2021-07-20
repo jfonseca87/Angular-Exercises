@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+.p-column-filter-add-rule {
+  display:none;
+}
+
+.p-column-filter-operator {
+  display: none;
+}

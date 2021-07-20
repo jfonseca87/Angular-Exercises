@@ -1,0 +1,22 @@
+<div [formGroup]="testForm">
+  <div>
+    <app-sectionone [form]="getSectionOneGroupControls(0)"></app-sectionone>
+  </div>
+  <div>
+    <app-sectiontwo [form]="getSectionOneGroupControls(1)"></app-sectiontwo>
+  </div>
+  <div>
+    <app-sectionthree [form]="getSectionOneGroupControls(2)"></app-sectionthree>
+  </div>
+  <div>
+    <app-sectionfour [form]="getSectionOneGroupControls(2)"></app-sectionfour>
+  </div>
+  <div>
+    <button>Cancelar</button> &nbsp; &nbsp; &nbsp;
+    <button>Guardar</button>
+  </div>
+</div>
+<div>
+  {{ testForm.value | json }} <br>
+  {{ testForm.status }}
+</div>

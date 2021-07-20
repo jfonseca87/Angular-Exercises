@@ -1,0 +1,7 @@
+<div class="form-group col-12">
+  <label [for]="confControl.id">{{ confControl.label }}</label>
+  <select class="form-control" [id]="confControl.id">
+    <option value="">Select...</option>
+    <option *ngFor="let option in confControl.options" [value]="option.value">{{ option.key }}</option>
+  </select>
+</div>

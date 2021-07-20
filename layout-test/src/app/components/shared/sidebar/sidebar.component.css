@@ -1,0 +1,8 @@
+aside {
+  display: flex;
+  flex-direction: column;
+  background-color: yellow;
+  width: 250px;
+  height: 100%;
+  padding: 30px;
+}

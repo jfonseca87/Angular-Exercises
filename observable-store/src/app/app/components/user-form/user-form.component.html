@@ -1,0 +1,13 @@
+<ng-container *ngFor="let user of users$ | async">
+
+  <form class="form" *ngIf="user.isSelected" [formGroup]="user.form">
+
+      <input  placeholder="First Name" formControlName="firstName">
+
+      <input  placeholder="Last Name" formControlName="lastName">
+
+  </form>
+
+</ng-container>
+
+<span class="description">user-create-form</span>
